@@ -1,0 +1,4 @@
+server/nodemodules/
+.env
+.vscode
+.git/
