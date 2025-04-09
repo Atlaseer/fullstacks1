@@ -1,4 +1,4 @@
-server/nodemodules/
+nodemodules/
 .env
 .vscode
 .git/
