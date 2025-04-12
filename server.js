@@ -1,4 +1,3 @@
-import {app} from './src/express.js'
 
 const port = process.env.PORT || 5000
 
