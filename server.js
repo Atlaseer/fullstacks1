@@ -1,6 +1,22 @@
+import dotenv from 'dotenv';
 
-const port = process.env.PORT || 5000
+dotenv.config();
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
-})
+
+import { MongoClient } from 'mongodb';
+var uri = process.env.MONGODB_URI;
+
+console.log(uri);
+
+
+MongoClient.connect(uri, function(err, db) {
+  if (err)
+     throw err;
+  
+  console.log("Database created!");
+  db.close();
+});
+
+
+
+console.log("done!");

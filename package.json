@@ -1,5 +1,22 @@
 {
+  "name": "expressserver",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -r node_modules package-lock.json",
+    "start": "node server.js",
+    "dev": "npx nodemon --env-file=.env app",
+    "eslint": "npx eslint .",
+    "eslint:fix": "npx eslint . --fix",
+    "test": "npx cross-env NODE_ENV=test npx mocha test/**/*.test.js"
+  },
   "dependencies": {
-    "mongodb": "^6.15.0"
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2"
   }
 }
